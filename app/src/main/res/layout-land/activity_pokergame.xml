@@ -1,0 +1,480 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.fiio.hellohg.pokergame.pokergame">
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/pokermaintable"
+        android:src="@drawable/pokjr2"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/pokermaintable"
+        android:layout_marginTop="80dp"
+        android:id="@+id/linaerlayout_user2"
+        android:layout_width="140dp"
+        android:layout_height="60dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            card_view:cardCornerRadius="10dp"
+            >
+
+            <RelativeLayout
+                android:background="#FFC107"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLAYER 2 "
+                    android:id="@+id/playerid2"
+                    android:layout_margin="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RAISE"
+                    android:id="@+id/status2"
+                    android:layout_below="@id/playerid2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="2090"
+                    android:id="@+id/score2"
+                    android:layout_below="@id/status2"
+                    android:layout_marginTop="1dp"
+
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/user2_card1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/score2"
+                    android:src="@drawable/card_bg"
+                    />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_toRightOf="@id/user2_card1"
+                    android:id="@+id/user2_card2"
+                    android:layout_marginTop="25dp"
+
+
+                    android:src="@drawable/card_bg"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/pokermaintable"
+        android:layout_marginTop="80dp"
+        android:id="@+id/linaerlayout_user4"
+        android:layout_width="140dp"
+        android:layout_height="60dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view4"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            card_view:cardCornerRadius="2dp"
+            >
+
+            <RelativeLayout
+                android:background="#FFC107"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLAYER 4 "
+                    android:id="@+id/playerid4"
+                    android:layout_margin="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RAISE"
+                    android:id="@+id/status4"
+                    android:layout_below="@id/playerid4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="2090"
+                    android:id="@+id/score4"
+                    android:layout_below="@id/status4"
+                    android:layout_marginTop="1dp"
+
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/user4_card1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/score4"
+                    android:src="@drawable/card_bg"
+                    />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_toRightOf="@id/user4_card1"
+                    android:id="@+id/user4_card2"
+                    android:layout_marginTop="25dp"
+
+
+                    android:src="@drawable/card_bg"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="210dp"
+        android:id="@+id/linaerlayout_user3"
+        android:layout_width="140dp"
+        android:layout_height="60dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            card_view:cardCornerRadius="2dp"
+            >
+
+            <RelativeLayout
+                android:background="#FFC107"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLAYER 3 "
+                    android:id="@+id/playerid3"
+                    android:layout_margin="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RAISE"
+                    android:id="@+id/status3"
+                    android:layout_below="@id/playerid3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="2090"
+                    android:id="@+id/score3"
+                    android:layout_below="@id/status3"
+                    android:layout_marginTop="1dp"
+
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/user3_card1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/score3"
+                    android:src="@drawable/card_bg"
+                    />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_toRightOf="@id/user3_card1"
+                    android:id="@+id/user3_card2"
+                    android:layout_marginTop="25dp"
+
+
+                    android:src="@drawable/card_bg"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="210dp"
+        android:id="@+id/linaerlayout_user1"
+        android:layout_width="140dp"
+        android:layout_height="60dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            card_view:cardCornerRadius="2dp"
+            >
+
+            <RelativeLayout
+                android:background="#FFC107"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PLAYER 1"
+                    android:id="@+id/playerid1"
+                    android:layout_margin="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RAISE"
+                    android:id="@+id/status1"
+                    android:layout_below="@id/playerid1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="2090"
+                    android:id="@+id/score1"
+                    android:layout_below="@id/status1"
+                    android:layout_marginTop="1dp"
+
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/user1_card1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/score1"
+                    android:src="@drawable/card_bg"
+                    />
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_toRightOf="@id/user1_card1"
+                    android:id="@+id/user1_card2"
+                    android:layout_marginTop="25dp"
+
+
+                    android:src="@drawable/card_bg"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DECK TOTAL "
+
+        android:id="@+id/deck"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="687 "
+        android:layout_below="@id/deck"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        android:layout_margin="2dp"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        android:elevation="10dp"
+        android:id="@+id/tablecard1"
+        android:layout_marginLeft="220dp"
+        android:src="@drawable/card_bg"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:elevation="10dp"
+
+        android:layout_marginTop="90dp"
+        android:id="@+id/tablecard2"
+        android:layout_marginLeft="270dp"
+        android:src="@drawable/card_bg"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:elevation="10dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        android:id="@+id/tablecard3"
+        android:layout_marginLeft="320dp"
+        android:src="@drawable/card_bg"
+        />
+
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="BET"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bet"
+        android:elevation="10dp"
+        android:layout_marginLeft="120dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:background="@drawable/roundbutton"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:text="RAISE"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/raise"
+        android:layout_toRightOf="@id/bet"
+        android:layout_marginLeft="50dp"
+        android:elevation="10dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:background="@drawable/roundbutton"
+        android:textColor="@android:color/black"
+
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:text="CALL"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/call"
+        android:layout_toRightOf="@id/raise"
+        android:layout_marginLeft="50dp"
+        android:elevation="10dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:background="@drawable/roundbutton"
+        android:textColor="@android:color/black"
+
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:textSize="15sp"
+        android:text="BET"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/hold"
+        android:layout_toRightOf="@id/call"
+        android:layout_marginLeft="50dp"
+        android:elevation="10dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:background="@drawable/roundbutton"
+        android:textColor="@android:color/black"
+
+        />
+</RelativeLayout>
